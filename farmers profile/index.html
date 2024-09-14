@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer's Profiles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping of profiles */
+      justify-content: center;
+      align-items: flex-start; /* Align items to the top */
+      height: 100vh;
+      margin: 0;
+      gap: 20px; /* Space between profiles */
+    }
+    .container {
+      width: 300px;
+      background-color: #f4f4f4; /* Slightly grey color */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      text-align: left; /* Align text to the left */
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #2e4053;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .description {
+      margin-top: 15px;
+    }
+    .name {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .vegetables {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .rate {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .rating {
+      font-size: 1.2em;
+      margin-bottom: 10px; /* Added spacing between rating and reviews */
+    }
+    .fa-star {
+      color: #ffc107;
+      margin-right: 3px;
+    }
+    .order-btn, .details-btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-right: 10px; /* Spacing between buttons */
+    }
+    .order-btn:hover {
+      background-color: #218838;
+    }
+    .details-btn {
+      background-color: white;
+      color: rgb(0, 255, 187);
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-color: rgb(0, 255, 187);
+      cursor: pointer;
+      border-radius: 2px;
+      border-style: solid;
+      border-width: 1px;
+      margin-right: 20px;
+      transition: background-color 0.3s,
+        color 0.3s;
+    }
+    .details-btn:hover {
+      background-color: rgb(0, 255, 187);
+      color: white;
+    }
+    .review-count {
+      font-size: 1em;
+      color: #888;
+    }
+  </style>
+  <!-- Add FontAwesome for star icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Farmer Profile 1: Ram Lal -->
+  <div class="container">
+    <div class="profile-pic">
+      <img src="360_F_630068155_RnZI6mC91wz7gUYFVmhzwpl4O6x00Cbh (1).jpg" alt="Farmer Ram Lal's Profile Picture">
+    </div>
+    <div class="description">
+      <div class="name">Ram Lal</div>
+      <div class="vegetables">
+        Available vegetables:<br>
+        <b>Potatoes: 30 tons</b><br>
+        <b>Beans: 40 tons</b>
+      </div>
+      <div class="rate">
+        Potatoes: 32 per kg<br>
+        Beans: 20 per kg
+      </div>
+      <div class="rating">
+        <span class="fa fa-star"></span>
+        <span>4.2</span>
+        <div class="review-count">(36 reviews)</div>
+      </div>
+      <button class="order-btn">Order Now</button>
+      <button class="details-btn">More Details</button>
+    </div>
+  </div>
+
+  <!-- Farmer Profile 2: Shyam Lal -->
+  <div class="container">
+    <div class="profile-pic">
+      <img src="farmer-pic1.jpeg" alt="Farmer Shyam Lal's Profile Picture">
+    </div>
+    <div class="description">
+      <div class="name">Shyam Lal</div>
+      <div class="vegetables">
+        Available vegetables:<br>
+        <b>Potatoes: 30 tons</b><br>
+        <b>Beans: 40 tons</b>
+      </div>
+      <div class="rate">
+        Potatoes: 32 per kg<br>
+        Beans: 20 per kg
+      </div>
+      <div class="rating">
+        <span class="fa fa-star"></span>
+        <span>4.2</span>
+        <div class="review-count">(36 reviews)</div>
+      </div>
+      <button class="order-btn">Order Now</button>
+      <button class="details-btn">More Details</button>
+    </div>
+  </div>
+
+  <!-- Farmer Profile 3: Touka Ram -->
+  <div class="container">
+    <div class="profile-pic">
+      <img src="farmer-pic2.jpeg" alt="Farmer Touka Ram's Profile Picture">
+    </div>
+    <div class="description">
+      <div class="name">Touka Ram</div>
+      <div class="vegetables">
+        Available vegetables:<br>
+        <b>Potatoes: 30 tons</b><br>
+        <b>Beans: 40 tons</b>
+      </div>
+      <div class="rate">
+        Potatoes: 32 per kg<br>
+        Beans: 20 per kg
+      </div>
+      <div class="rating">
+        <span class="fa fa-star"></span>
+        <span>4.2</span>
+        <div class="review-count">(36 reviews)</div>
+      </div>
+      <button class="order-btn">Order Now</button>
+      <button class="details-btn">More Details</button>
+    </div>
+  </div>
+
+  <!-- Farmer Profile 4: Mani Ram -->
+  <div class="container">
+    <div class="profile-pic">
+      <img src="farmer-pic4.jpeg" alt="Farmer Mani Ram's Profile Picture">
+    </div>
+    <div class="description">
+      <div class="name">Mani Ram</div>
+      <div class="vegetables">
+        Available vegetables:<br>
+        <b>Potatoes: 30 tons</b><br>
+        <b>Beans: 40 tons</b>
+      </div>
+      <div class="rate">
+        Potatoes: 32 per kg<br>
+        Beans: 20 per kg
+      </div>
+      <div class="rating">
+        <span class="fa fa-star"></span>
+        <span>4.2</span>
+        <div class="review-count">(36 reviews)</div>
+      </div>
+      <button class="order-btn">Order Now</button>
+      <button class="details-btn">More Details</button>
+    </div>
+  </div>
+
+  <!-- Farmer Profile 5: Hari Lal -->
+  <div class="container">
+    <div class="profile-pic">
+      <img src="farmer-pic5.jpeg" alt="Farmer Hari Lal's Profile Picture">
+    </div>
+    <div class="description">
+      <div class="name">Hari Lal</div>
+      <div class="vegetables">
+        Available vegetables:<br>
+        <b>Potatoes: 30 tons</b><br>
+        <b>Beans: 40 tons</b>
+      </div>
+      <div class="rate">
+        Potatoes: 32 per kg<br>
+        Beans: 20 per kg
+      </div>
+      <div class="rating">
+        <span class="fa fa-star"></span>
+        <span>4.2</span>
+        <div class="review-count">(36 reviews)</div>
+      </div>
+      <button class="order-btn">Order Now</button>
+      <button class="details-btn">More Details</button>
+    </div>
+  </div>
+
+<!-- Farmer Profile 6: Harihar Kaka -->
+<div class="container">
+    <div class="profile-pic">
+      <img src="farmer-pic6.jpeg" alt="Farmer Harihar Kaka's Profile Picture">
+    </div>
+    <div class="description">
+      <div class="name">Harihar Kaka</div>
+      <div class="vegetables">
+        Available vegetables:<br>
+        <b>Potatoes: 30 tons</b><br>
+        <b>Beans: 40 tons</b>
+      </div>
+      <div class="rate">
+        Potatoes: 32 per kg<br>
+        Beans: 20 per kg
+      </div>
+      <div class="rating">
+        <span class="fa fa-star"></span>
+        <span>4.2</span>
+        <div class="review-count">(36 reviews)</div>
+      </div>
+      <button class="order-btn">Order Now</button>
+      <button class="details-btn">More Details</button>
+    </div>
+  </div>
+
+  <!-- Farmer Profile 7: Jai Kisan -->
+  <div class="container">
+    <div class="profile-pic">
+      <img src="farmer-pic7.jpeg" alt="Farmer Jai Kisan's Profile Picture">
+    </div>
+    <div class="description">
+      <div class="name">Jai Kisan</div>
+      <div class="vegetables">
+        Available vegetables:<br>
+        <b>Potatoes: 30 tons</b><br>
+        <b>Beans: 40 tons</b>
+      </div>
+      <div class="rate">
+        Potatoes: 32 per kg<br>
+        Beans: 20 per kg
+      </div>
+      <div class="rating">
+        <span class="fa fa-star"></span>
+        <span>4.2</span>
+        <div class="review-count">(36 reviews)</div>
+      </div>
+      <button class="order-btn">Order Now</button>
+      <button class="details-btn">More Details</button>
+    </div>
+  </div>
+
+  <!-- Farmer Profile 8: Mukesh Kumar -->
+  <div class="container">
+    <div class="profile-pic">
+      <img src="farmer-pic8 (2).jpeg" alt="Farmer Mukesh Kumar's Profile Picture">
+    </div>
+    <div class="description">
+      <div class="name">Mukesh Kumar</div>
+      <div class="vegetables">
+        Available vegetables:<br>
+        <b>Potatoes: 30 tons</b><br>
+        <b>Beans: 40 tons</b>
+      </div>
+      <div class="rate">
+        Potatoes: 32 per kg<br>
+        Beans: 20 per kg
+      </div>
+      <div class="rating">
+        <span class="fa fa-star"></span>
+        <span>4.2</span>
+        <div class="review-count">(36 reviews)</div>
+      </div>
+      <button class="order-btn">Order Now</button>
+      <button class="details-btn">More Details</button>
+    </div>
+  </div>
+</body>
+</html>
